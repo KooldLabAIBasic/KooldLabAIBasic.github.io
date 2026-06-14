@@ -728,6 +728,100 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
 }
 
+/* ----- Hero Canvas (particle network) ----- */
+#hero-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+}
+
+/* Ensure hero content sits above the canvas */
+.hero { position: relative; overflow: hidden; }
+.hero .container { position: relative; z-index: 1; }
+
+/* ----- Glow Blobs (drifting background gradient) ----- */
+.glow-blob {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+  filter: blur(80px);
+}
+
+.glow-blob-1 {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.055) 0%, transparent 70%);
+  top: -180px;
+  left: -200px;
+  animation: blobDrift1 22s ease-in-out infinite alternate;
+}
+
+.glow-blob-2 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(120, 80, 255, 0.04) 0%, transparent 70%);
+  top: 40%;
+  right: -200px;
+  animation: blobDrift2 28s ease-in-out infinite alternate;
+}
+
+.glow-blob-3 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.03) 0%, transparent 70%);
+  bottom: 5%;
+  left: 30%;
+  animation: blobDrift3 18s ease-in-out infinite alternate;
+}
+
+@keyframes blobDrift1 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(80px, 60px) scale(1.08); }
+  66%  { transform: translate(-40px, 120px) scale(0.95); }
+  100% { transform: translate(60px, -40px) scale(1.05); }
+}
+
+@keyframes blobDrift2 {
+  0%   { transform: translate(0, 0) scale(1); }
+  33%  { transform: translate(-100px, 80px) scale(1.1); }
+  66%  { transform: translate(60px, -60px) scale(0.92); }
+  100% { transform: translate(-80px, 40px) scale(1.06); }
+}
+
+@keyframes blobDrift3 {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(120px, -80px) scale(1.12); }
+  100% { transform: translate(-60px, 60px) scale(0.94); }
+}
+
+/* Scroll parallax — blobs shift via CSS custom property updated by JS */
+.glow-blob-1 { transform: translateY(calc(var(--scroll-y, 0) * -0.06px)); }
+.glow-blob-2 { transform: translateY(calc(var(--scroll-y, 0) * 0.04px)); }
+.glow-blob-3 { transform: translateY(calc(var(--scroll-y, 0) * -0.03px)); }
+
+/* Section title glow — triggered by JS on scroll entry */
+.title-glow {
+  animation: titleGlowPulse 1.2s ease-out forwards;
+}
+@keyframes titleGlowPulse {
+  0%   { text-shadow: none; }
+  40%  { text-shadow: 0 0 24px rgba(0, 212, 255, 0.35); }
+  100% { text-shadow: none; }
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .glow-blob { animation: none !important; }
+  #hero-canvas { display: none; }
+  .title-glow { animation: none !important; }
+}
+
 /* ----- Responsive ----- */
 @media (max-width: 768px) {
   .nav-links { display: none; }
