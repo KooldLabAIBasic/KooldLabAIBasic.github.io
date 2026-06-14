@@ -1,5 +1,5 @@
 /* =========================================================
-   KooldLab.ai — Navigation JS
+   KooldLabAI — Navigation JS
    Sticky nav, mobile hamburger, active page highlight,
    scroll-triggered fade-in animations
    ========================================================= */
