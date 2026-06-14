@@ -278,6 +278,8 @@ img { max-width: 100%; display: block; }
 /* ----- Page offset for fixed nav ----- */
 .page-content {
   padding-top: var(--nav-height);
+  position: relative;
+  z-index: 1;
 }
 
 /* ----- Hero ----- */
@@ -740,7 +742,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* Ensure hero content sits above the canvas */
-.hero { position: relative; overflow: hidden; }
+.hero { position: relative; overflow: hidden; isolation: isolate; }
 .hero .container { position: relative; z-index: 1; }
 
 /* ----- Glow Blobs (drifting background gradient) ----- */
@@ -748,7 +750,7 @@ img { max-width: 100%; display: block; }
   position: fixed;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
   will-change: transform;
   filter: blur(80px);
 }
