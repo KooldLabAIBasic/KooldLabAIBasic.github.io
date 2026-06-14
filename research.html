@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — KooldLab.ai</title>
+  <meta name="description" content="KooldLab.ai research — edge AI systems and engineering AI products under active development." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="KooldLab.ai home">
+        <img src="assets/logo.svg" alt="KooldLab.ai logo" />
+        <span class="nav-logo-text">Koold<span>Lab</span>.ai</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile" role="menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="learn.html">Learn</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-hero fade-in">
+        <p class="page-hero-label">// research &amp; development</p>
+        <h1 class="page-hero-title">What We're Building</h1>
+        <p class="page-hero-desc">
+          We apply frontier AI to physical and engineered systems — communications, signal processing,
+          robotics, and control. Research publications are in progress; our first products are under active development.
+        </p>
+      </div>
+
+      <!-- Status notice -->
+      <div class="fade-in" style="
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--accent);
+        border-radius: var(--radius);
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 48px;
+        font-size: 0.88rem;
+        color: var(--text-secondary);
+      ">
+        <span style="font-size:1.1rem; flex-shrink:0;">ℹ️</span>
+        <span>
+          KooldLab.ai is a newly established research collective. No papers have been published yet.
+          Formal research outputs — preprints, datasets, and open-source implementations — will appear here as they are completed.
+        </span>
+      </div>
+
+      <!-- Edge AI under development banner -->
+      <div class="dev-banner fade-in">
+        <div class="dev-banner-icon">⚙️</div>
+        <h2 class="dev-banner-title">Edge AI Products — Under Development</h2>
+        <p class="dev-banner-desc">
+          We are actively building AI systems designed to run at the edge — close to the physical layer,
+          where latency and compute constraints are real. Our current focus areas span intelligent wireless
+          transceivers, on-device signal processing, and lightweight neural architectures for embedded systems.
+          <br /><br />
+          These are not demos. They are engineering-grade implementations built to the standards we believe the field requires.
+        </p>
+        <div class="dev-tags">
+          <span class="tag">edge-ai</span>
+          <span class="tag">signal-processing</span>
+          <span class="tag">wireless-comms</span>
+          <span class="tag">robotics</span>
+          <span class="tag">embedded-ml</span>
+        </div>
+        <div style="margin-top: 28px;">
+          <span class="badge badge-dev">Active Development</span>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Focus areas -->
+      <div class="fade-in">
+        <p class="section-title">Research Focus Areas</p>
+        <p class="section-subtitle">Domains where we apply and advance AI methodology.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">📡</div>
+            <h3 class="card-title">Wireless Communications</h3>
+            <p class="card-desc">
+              Neural networks for channel estimation, equalization, and end-to-end learned transceivers.
+              Bridging classical DSP and modern deep learning.
+            </p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:8px;">
+              <span class="tag">ofdm</span>
+              <span class="tag">channel-estimation</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🌊</div>
+            <h3 class="card-title">Signal Processing</h3>
+            <p class="card-desc">
+              Learned signal representations, adaptive filtering, and AI-augmented detection algorithms
+              for resource-constrained environments.
+            </p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:8px;">
+              <span class="tag">adaptive-filtering</span>
+              <span class="tag">detection</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🤖</div>
+            <h3 class="card-title">Robotics &amp; Control</h3>
+            <p class="card-desc">
+              Reinforcement learning and model-based control for physical systems. Lightweight policies
+              deployable on embedded hardware.
+            </p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:8px;">
+              <span class="tag">reinforcement-learning</span>
+              <span class="tag">control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Coming soon: publications -->
+      <div class="fade-in">
+        <p class="section-title">Publications</p>
+        <p class="section-subtitle">Preprints, papers, and technical reports.</p>
+
+        <div class="empty-state">
+          <div class="empty-state-icon">📄</div>
+          <h3 class="empty-state-title">No publications yet</h3>
+          <p class="empty-state-desc">
+            Research papers and preprints will be listed here as they are completed and reviewed.
+            We prioritize quality and rigor — publications will appear when they meet our standards.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>KooldLab.ai</strong> · Independent AI Research Collective
+        </div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-note">// non-profit · open-source · reproducible research</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KooldLab.ai — AI for developers, and developers for AI</title>
+  <meta name="description" content="KooldLab.ai is an independent, non-profit AI research collective translating frontier AI research into reproducible engineering systems and educational artifacts." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="KooldLab.ai home">
+        <img src="assets/logo.svg" alt="KooldLab.ai logo" />
+        <span class="nav-logo-text">Koold<span>Lab</span>.ai</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav-mobile" id="nav-mobile" role="menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="learn.html">Learn</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="page-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-eyebrow">// KooldLab.ai · Est. 2024</p>
+          <h1 class="hero-title">
+            Independent AI Research<br />
+            for <span class="accent">Engineered Systems</span>
+          </h1>
+          <p class="hero-tagline">"AI for developers, and developers for AI"</p>
+          <p class="hero-domain-line">
+            <span class="hero-domain-label">Exploring →&nbsp;</span>
+            <span id="hero-domain">wireless communications</span>
+          </p>
+          <div class="hero-actions">
+            <a href="research.html" class="btn btn-primary">View Research</a>
+            <a href="learn.html" class="btn btn-outline">Start Learning</a>
+            <a href="about.html" class="btn btn-ghost">Our Mission</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SNAPSHOT ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <div style="flex:1; min-width: 220px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; gap: 14px; align-items: flex-start;">
+            <span style="font-size:1.6rem; flex-shrink:0;">🔬</span>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); margin-bottom:4px;">Frontier Research</div>
+              <div style="font-size:0.85rem; color:var(--text-secondary);">Applying advanced AI methodologies to real-world engineering domains.</div>
+            </div>
+          </div>
+          <div style="flex:1; min-width: 220px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; gap: 14px; align-items: flex-start;">
+            <span style="font-size:1.6rem; flex-shrink:0;">📖</span>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); margin-bottom:4px;">Open Education</div>
+              <div style="font-size:0.85rem; color:var(--text-secondary);">High-quality courses and materials emphasizing clarity and reproducibility.</div>
+            </div>
+          </div>
+          <div style="flex:1; min-width: 220px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; gap: 14px; align-items: flex-start;">
+            <span style="font-size:1.6rem; flex-shrink:0;">🌐</span>
+            <div>
+              <div style="font-weight:600; color:var(--text-primary); margin-bottom:4px;">Open Source</div>
+              <div style="font-size:0.85rem; color:var(--text-secondary);">Releasing reproducible implementations and structured project codebases.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===== PRODUCT PORTFOLIO ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <p class="section-title fade-in">Product Portfolio</p>
+        <p class="section-subtitle fade-in">Our published courses and tools — built for engineers who want to go deep.</p>
+
+        <div class="product-card fade-in">
+          <div class="product-card-icon">📡</div>
+          <div class="product-card-body">
+            <p class="product-card-label">Video Course · Udemy</p>
+            <h2 class="product-card-title">Telecom AI: Neural Networks for Wireless Transceivers</h2>
+            <p class="product-card-desc">
+              A comprehensive course bridging classical signal processing and modern deep learning for wireless communications.
+              Learn how neural networks can replace or augment traditional transceiver blocks — from channel estimation to end-to-end learned systems.
+              Designed for engineers and researchers with a solid foundation in communications or machine learning.
+            </p>
+            <div class="product-card-meta">
+              <span class="tag">signal-processing</span>
+              <span class="tag">deep-learning</span>
+              <span class="tag">wireless-comms</span>
+              <span class="tag">pytorch</span>
+            </div>
+            <a
+              href="https://www.udemy.com/course/telecom-ai-neural-networks-for-wireless-transceivers/?couponCode=F395923BE0BE8FC7989B"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              Enroll on Udemy →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ===== EXPLORE SECTIONS ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <p class="section-title fade-in">Explore KooldLab.ai</p>
+        <p class="section-subtitle fade-in">Research, learning materials, and articles — all in one place.</p>
+
+        <div class="grid-3">
+          <a href="research.html" class="card fade-in" style="text-decoration:none;">
+            <div class="card-icon">⚗️</div>
+            <h3 class="card-title">Research</h3>
+            <p class="card-desc">Edge AI products and engineering systems under active development. Research publications coming soon.</p>
+            <span class="card-link">View Research</span>
+          </a>
+
+          <a href="learn.html" class="card fade-in" style="text-decoration:none;">
+            <div class="card-icon">🎓</div>
+            <h3 class="card-title">Learn</h3>
+            <p class="card-desc">Courses, explainers, and implementation guides that make complex AI approachable for engineers.</p>
+            <span class="card-link">Browse Courses</span>
+          </a>
+
+          <a href="blog.html" class="card fade-in" style="text-decoration:none;">
+            <div class="card-icon">✍️</div>
+            <h3 class="card-title">Blog</h3>
+            <p class="card-desc">Articles and research updates on AI for engineered systems. First posts coming soon.</p>
+            <span class="card-link">Read Articles</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>KooldLab.ai</strong> · Independent AI Research Collective
+        </div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-note">// non-profit · open-source · reproducible research</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

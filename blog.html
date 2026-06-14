@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — KooldLab.ai</title>
+  <meta name="description" content="Articles and research updates from KooldLab.ai on AI for engineered systems." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="KooldLab.ai home">
+        <img src="assets/logo.svg" alt="KooldLab.ai logo" />
+        <span class="nav-logo-text">Koold<span>Lab</span>.ai</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="nav-mobile" role="menu">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="learn.html">Learn</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Page header -->
+      <div class="page-hero fade-in">
+        <p class="page-hero-label">// articles &amp; updates</p>
+        <h1 class="page-hero-title">Blog</h1>
+        <p class="page-hero-desc">
+          In-depth articles on AI for engineering, technical deep-dives, and research updates.
+          Written with the same rigor we apply to everything we publish.
+        </p>
+      </div>
+
+      <!-- Empty state -->
+      <div class="empty-state fade-in" style="padding: 100px 24px;">
+        <div class="empty-state-icon">✍️</div>
+        <h2 class="empty-state-title">Articles Coming Soon</h2>
+        <p class="empty-state-desc">
+          We're working on our first articles. Expect technical deep-dives on AI for wireless systems,
+          edge AI engineering, and reproducible research practices.
+          <br /><br />
+          Check back soon — or explore our existing learning materials while you wait.
+        </p>
+        <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:32px;">
+          <a href="learn.html" class="btn btn-outline">Browse Courses</a>
+          <a href="research.html" class="btn btn-ghost">View Research</a>
+        </div>
+      </div>
+
+      <!-- Topics preview -->
+      <hr class="divider" />
+
+      <div class="fade-in">
+        <p class="section-title">Topics We'll Cover</p>
+        <p class="section-subtitle">A preview of the areas our articles will explore.</p>
+
+        <div class="grid-3">
+          <div class="card" style="cursor:default;">
+            <div class="card-icon">📡</div>
+            <h3 class="card-title">AI for Wireless Communications</h3>
+            <p class="card-desc">Deep dives into neural transceivers, learned modulation, and data-driven approaches to channel modeling.</p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:8px;">
+              <span class="badge badge-coming">Coming Soon</span>
+            </div>
+          </div>
+
+          <div class="card" style="cursor:default;">
+            <div class="card-icon">⚙️</div>
+            <h3 class="card-title">Edge AI Engineering</h3>
+            <p class="card-desc">How to design, compress, and deploy AI models on hardware where compute is scarce and latency is everything.</p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:8px;">
+              <span class="badge badge-coming">Coming Soon</span>
+            </div>
+          </div>
+
+          <div class="card" style="cursor:default;">
+            <div class="card-icon">🔬</div>
+            <h3 class="card-title">Reproducible Research</h3>
+            <p class="card-desc">Practices, tools, and frameworks for making AI research results reproducible and verifiable by others.</p>
+            <div style="display:flex; gap:6px; flex-wrap:wrap; margin-top:8px;">
+              <span class="badge badge-coming">Coming Soon</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <strong>KooldLab.ai</strong> · Independent AI Research Collective
+        </div>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <p class="footer-note">// non-profit · open-source · reproducible research</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
