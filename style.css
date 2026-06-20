@@ -3,7 +3,7 @@
    Dark theme | Inter + JetBrains Mono | Cyan accent
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ----- Reset & Base ----- */
 *, *::before, *::after {
@@ -43,7 +43,7 @@ html {
 body {
   background-color: var(--bg-base);
   color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   line-height: 1.7;
   min-height: 100vh;
