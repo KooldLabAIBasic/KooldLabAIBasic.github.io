@@ -3,7 +3,7 @@
    Dark theme | Inter + JetBrains Mono | Cyan accent
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
 /* ----- Reset & Base ----- */
 *, *::before, *::after {
@@ -43,10 +43,12 @@ html {
 body {
   background-color: var(--bg-base);
   color: var(--text-primary);
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: 'Crimson Pro', 'Times New Roman', 'Georgia', serif;
+  font-size: 18px;
+  line-height: 1.65;
   min-height: 100vh;
+  font-feature-settings: "kern" 1, "liga" 1, "onum" 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
